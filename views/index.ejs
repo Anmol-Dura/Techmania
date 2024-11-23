@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c5017c04fb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c5017c04fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/public/css/style.css" />
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="login-container">
-            <div class="login-form">
-                <div class="login-logo">
-                    <a href="index.ejs"><img src="/images/Logo.png" alt="Techmania logo"></a>
-                </div>
+      <div class="login-container">
+        <div class="login-form">
+          <div class="login-logo">
+            <a href="index.ejs"
+              ><img src="/images/Logo.png" alt="Techmania logo"
+            /></a>
+          </div>
 
-                <!-- Error message section -->
-                <% if (errorMessage) { %>
-                    <div class="error-message" style="color: red; margin-bottom: 1em;">
-                        <p><%= errorMessage %></p>
-                    </div>
-                <% } %>
+          <!-- Error message section -->
+          <% if (errorMessage) { %>
+          <div class="error-message" style="color: red; margin-bottom: 1em">
+            <p><%= errorMessage %></p>
+          </div>
+          <% } %>
 
-                <!-- Success message section -->
-                <% if (successMessage) { %>
-                    <div class="success-message" style="color: green; margin-bottom: 1em;">
-                        <p><%= successMessage %></p>
-                    </div>
-                <% } %>
+          <!-- Success message section -->
+          <% if (successMessage) { %>
+          <div class="success-message" style="color: green; margin-bottom: 1em">
+            <p><%= successMessage %></p>
+          </div>
+          <% } %>
 
-                <div class="login-buttons">
-                    <button type="button" id="createBtn">Create Account</button>
-                    <button type="button" id="loginBtn">Log in</button>
-                </div>
+          <div class="login-buttons">
+            <button type="button" id="createBtn">Create Account</button>
+            <button type="button" id="loginBtn">Log in</button>
+          </div>
 
-                <form id="userForm" method="post" action="/validate">
-                    <div class="entry-group">
-                        <div class="entry-field  Tablet" id="uName">
-                            <i class="fa-solid fa-user"></i>
-                            <label for="uName"></label>
-                            <input id="uName" name="uName" type="text" placeholder="Username" required>
-                            <div></div>
-                        </div>
+          <form id="userForm" method="post" action="/validate">
+            <div class="entry-group">
+              <div class="entry-field Tablet" id="uName">
+                <i class="fa-solid fa-user"></i>
+                <label for="uName"></label>
+                <input
+                  id="uName"
+                  name="uName"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+                <div></div>
+              </div>
 
-                        <div class="entry-field" id="password1Field">
-                            <i class="fa-solid fa-lock"></i>
-                            <label for="password1"></label>
-                            <input id="password1" name="password1" type="password" placeholder="Password" required>
-                            <div></div>
-                        </div>
+              <div class="entry-field" id="password1Field">
+                <i class="fa-solid fa-lock"></i>
+                <label for="password1"></label>
+                <input
+                  id="password1"
+                  name="password1"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <div></div>
+              </div>
 
-                        <div class="entry-field" id="password2Field">
-                            <i class="fa-solid fa-lock"></i>
-                            <label for="password2"></label>
-                            <input id="password2" name="password2" type="password" placeholder="Re-enter Password">
-                            <div></div>
-                        </div>
+              <div class="entry-field" id="password2Field">
+                <i class="fa-solid fa-lock"></i>
+                <label for="password2"></label>
+                <input
+                  id="password2"
+                  name="password2"
+                  type="password"
+                  placeholder="Re-enter Password"
+                />
+                <div></div>
+              </div>
 
-                        <input type="hidden" id="operation" name="operation" value="Sign Up">
+              <input
+                type="hidden"
+                id="operation"
+                name="operation"
+                value="Sign Up"
+              />
 
-                        <div class="login-buttons">
-                            <button type="submit" id="submit-Login">Submit</button>
-                            <button type="reset" id="resetBtn">Reset</button>
-                        </div>
-
-                    </div>
-                </form>
+              <div class="login-buttons">
+                <button type="submit" id="submit-Login">Submit</button>
+                <button type="reset" id="resetBtn">Reset</button>
+              </div>
             </div>
-
+          </form>
         </div>
-
+      </div>
     </main>
-    <script src="/js/login.js"></script>
-</body>
+    <script src="/public/js/login.js"></script>
+  </body>
 </html>

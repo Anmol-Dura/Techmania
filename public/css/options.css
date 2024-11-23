@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4f37efdb; /* Retaining the existing background color */
+  text-align: center;
+  padding: 50px;
+}
+
+* {
+  /* border: 2px solid black; */ /* Keeping this commented as per your original code */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+body {
+  margin-top: 10%; /* Retaining your margin-top */
+  color: white; /* Retaining the text color */
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem 0 1rem 0; /* Retaining your padding */
+}
+
+button {
+  padding: 15px 30px;
+  min-width: 20%; /* Retaining the button width */
+  font-size: 16px;
+  background-color: #007bff; /* Retaining the button color */
+  color: #fff; /* Retaining the button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Retaining the hover effect */
+}
+
+/* New styles for the image container */
+.image-container {
+  position: absolute;
+  top: 10px; /* Positioning the image container at the top */
+  left: 10px; /* Aligning the image container to the left */
+}
+
+.image-container img {
+  width: 100px; /* Setting a fixed width for the image */
+  height: auto; /* Ensuring the image scales proportionally */
+  border-radius: 10px; /* Adding rounded corners to the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
+}
