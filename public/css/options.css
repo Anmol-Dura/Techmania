@@ -27,19 +27,21 @@ body {
   padding: 1rem 0 1rem 0; /* Retaining your padding */
 }
 
-button {
+.button {
+  display: inline-block;
   padding: 15px 30px;
-  min-width: 20%; /* Retaining the button width */
   font-size: 16px;
-  background-color: #007bff; /* Retaining the button color */
-  color: #fff; /* Retaining the button text color */
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
 }
 
-button:hover {
-  background-color: #0056b3; /* Retaining the hover effect */
+.button:hover {
+  background-color: #0056b3;
 }
 
 /* New styles for the image container */
