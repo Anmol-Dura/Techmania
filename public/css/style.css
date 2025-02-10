@@ -89,6 +89,158 @@
     margin-left: 0.1em;
 }
 
+
+/* css for the Create page  */
+.container {
+    width: 98vw;
+    max-height: 100vh; 
+    overflow-y: auto;  
+      position: absolute;
+    background-image: url(../images/background.png);
+    overflow: auto;
+
+    background-position: center;
+    /* background-size: 80%;  */
+    /* position: relative; */
+
+
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newProduct {
+    max-width: 400px;
+    height: fit-content;
+    width: 100%;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 0%;
+    top: 200px;
+}
+
+.newProduct h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*  */
+
+.addUser form {
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10%;
+}
+
+.entry-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.entry-field {
+    width: 100%;
+    /* height: 3.5rem; */
+    /* height: auto; */
+    background-color: #f5f5f5;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-start; /* Align children at the top */
+
+    padding: 0.5em;
+    transition: max-height 0.1s;
+}
+
+.entry-field input, .entry-field textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0.75em 1em;
+    display: block;
+    border-radius: 0.5em;
+}
+
+.entry-field label {
+    color: grey;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.entry-field i {
+    color: #999;
+    margin-left: 1em;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    gap:190px;
+}
+
+.product-buttons button {
+    flex: 1;
+    background: yellow;
+    color: black;
+    padding: 0.8em;
+    border: black
+    ;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-buttons button:hover {
+    background-color: #c7e81e;
+}
+
+.product-buttons button[type="reset"] {
+    background-color: #f44336;
+}
+
+.product-buttons button[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+.addUser {
+    width: 100%;
+}
+
+.entry-field input:focus, .entry-field textarea:focus {
+    background-color: #f1f1f1;
+}
+
+.entry-field textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .newProduct {
+        padding: 1.5em;
+    }
+
+    .product-buttons {
+        flex-direction: column;
+    }
+
+    /* .product-buttons button {
+        margin-bottom: 10px;
+    } */
+}
+
+
+=======
 /************************ CSS for Delete Product Page **********************/
 
 /* General body styles */

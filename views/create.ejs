@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c5017c04fb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Create New Product</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="newProduct">
+        <div class="upper">
+          <h1>Create New Product</h1>
+          
+
+        <!-- Success message section -->
+        <% if (successMessage) { %>
+          <div class="success-message" style="color: green; margin-bottom: 1em;">
+            <p><%= successMessage %></p>
+          </div>
+        <% } %>
+
+          <img
+            src="/images/Logo.png"
+            height="100%"
+            width="100%"
+            alt="logo"/>
+            
+        </div>
+        
+          
+          <div class="addUser">
+            <form method="post" action="/addProduct">
+              <div class="entry-group">
+                <div class="entry-field" id="pIdField">
+                  <i class="fa-solid fa-barcode"></i>
+                  <label for="pId">Product ID</label>
+                  <input
+                    id="pId"
+                    name="pId"
+                    type="number"
+                    placeholder="Product ID"
+                    required
+                  />
+                </div>
+
+                <div class="entry-field" id="pNameField">
+                  <i class="fa-solid fa-cogs"></i>
+                  <label for="pName">Product Name</label>
+                  <input
+                    id="pName"
+                    name="pName"
+                    type="text"
+                    placeholder="Product Name"
+                    required
+                  />
+                </div>
+
+                <div class="entry-field" id="pDescriptionField">
+                  <i class="fa-solid fa-info-circle"></i>
+                  <label for="pDescription">Product Description</label>
+                  <textarea 
+                    id="pDescription"
+                    name="pDescription"
+                    placeholder="Product Description"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="entry-field" id="pCategoryField">
+                  <i class="fa-solid fa-tags"></i>
+                  <label for="pCategory">Category</label>
+                  <input
+                    id="pCategory"
+                    name="pCategory"
+                    type="text"
+                    placeholder="Category"
+                    required
+                  />
+                </div>
+
+                <div class="entry-field" id="pStockField">
+                  <i class="fa-solid fa-cubes"></i>
+                  <label for="pStock">Stock Quantity</label>
+                  <input
+                    id="pStock"
+                    name="pStock"
+                    type="number"
+                    placeholder="Stock Quantity"
+                    required
+                  />
+                </div>
+
+                <div class="entry-field" id="pPriceField">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <label for="pPrice">Price</label>
+                  <input
+                    id="pPrice"
+                    name="pPrice"
+                    type="number"
+                    placeholder="Price"
+                    required
+                  />
+                </div>
+
+                <div class="entry-field" id="pImageField">
+                  <i class="fa-solid fa-image"></i>
+                  <label for="pImage">Product Image URL</label>
+                  <input
+                    id="pImage"
+                    name="pImage"
+                    type="text"
+                    placeholder="Image URL"
+                    required
+                  />
+                </div>
+
+                <div class="product-buttons">
+                  <button type="submit">Create Product</button>
+                  <button type="reset">Reset</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
